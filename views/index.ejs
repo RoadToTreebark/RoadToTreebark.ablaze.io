@@ -1,0 +1,228 @@
+<% include partials/header %>
+
+
+
+
+<!-- <div id = "overlay"> 
+<div class="videoWrapper">
+   <div class="centered">
+   <iframe id = "player" src="https://www.youtube.com/embed/VMfR7DxfcXo?enablejsapi=1&amp;origin=http://localhost:8080&amp;controls=0&amp;autoplay=1&amp;showinfo=0&amp;" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+   </div>-->
+</div>
+
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+	  console.log("faggot");
+		player = new YT.Player('player',{
+        events : {
+		'onReady' : onPlayerReady
+		
+		}
+		});
+		
+	  function onPlayerReady(){
+		console.log("soy gay");
+		setTimeout(stopVideo, 5000);
+	  }
+      function stopVideo() {
+		console.log("done");
+        player.stopVideo();
+		document.getElementById("overlay").style.display = "none";
+      }
+      }
+
+    </script>
+</div>
+<section class="intro">
+<section class= "introTop">
+    <div class="intro-text dick">
+      <div class="text-container" >
+		<h2><strong>"The aim of marketing is to know and understand the customer so well the product or service fits him and sells itself."</strong> - Peter Drucker </h2>
+	</div>
+      
+    </div>
+    <!-- <div class="buttonContainer">
+      <div class="nextSectionArrow" id="arrow"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i><div>
+    </div> -->
+</section>
+</section>
+
+<section >
+  <div class="text-container">
+    <div class="primary">
+	<h1>Our Mission</h1>
+	  <div class="intro-text">
+      <span class="typed-text"></span>
+      <span class="typed-cursor"></span>
+    </div>
+    </div>
+  </div>
+</section>
+
+<section>
+<div class="cont">
+  
+  <div class="text-container cunt">
+  Affordable video advertising should not just be something that involves a half-assed template created by some freelance editor in Malaysia; soulless advertising ever truly stands out to people. Truly gripping advertising 
+  is created with true creativity, and the perfect mededly of eclectic music and visuals made by people who genuinely care and put time into making the 
+  product creative, something we proud ourselves on doing for all of our clients.</div>
+  
+  <div class="overlay">
+    <div class="t"><h2>Music & Visuals<h2></div>
+  </div>
+</div>
+</section>
+<section>
+
+<div class="cont">
+  
+  <div class="text-container cunt" >
+  Effective marketing is not possible without fully utilizing the full power of social media. Its as simple as that. 
+  </div>
+  
+  <div class="overlay">
+    <div class="t"><h2>Social Media<h2></div>
+  </div>
+</div>
+</section>
+
+<section class="intro ass">
+	<div class="text-container hover" >
+		<a href="https://www.youtube.com/watch?v=9U-iHijrK8A"><h2 class= "dick">HAREON AD</h2></a>
+		<p>Shown in front of over 100k people at a solar convention</p>
+	</div>
+    <!-- <div class="buttonContainer">
+      <div class="nextSectionArrow" id="arrow"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i><div>
+    </div> -->
+
+</section>
+
+<section class="intro booty">
+	<div class="text-container hover" >
+		<a href="https://www.youtube.com/watch?v=nZYC9dTpjUo"><h2 class= "dick">LIFELESS</h2></a>
+		<p>Award winning film by Jedwin Mok</p>
+	</div>
+    <!-- <div class="buttonContainer">
+      <div class="nextSectionArrow" id="arrow"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i><div>
+    </div> -->
+
+</section>
+
+<section id="team">
+<div class="text-container">
+  <div class="secondary">
+    <h1>Our Team</h1>
+  </div>
+  <span class="personnel-card" id = "left">
+    <div class="personnel-card-image">
+      <img src="/img/jedwinmok.png" class="img-circle">
+    </div>
+    <div class="personnel-card-name">
+      <span>Jedwin Mok</span>
+    </div>
+    <div class="personnel-card-education-details">
+      <span>Founder & CEO</span>
+    </div>
+    <div class="personnel-card-history personnel-card-space">
+      <p></p>
+      <div class="underline"></div>
+    </div>
+    <div class="personnel-card-links personnel-card-space">
+      <div class="mail social" onclick=""><i class="fa fa-google" aria-hidden="true"></i></div>
+      <div class="linkedIn social" onclick="openLinkedIn()"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+      <div class="github social" onclick="openGitHub()"><i class="fa fa-github-square" aria-hidden="true"></i></div>
+      <div class="twitter social" onclick="openTwitter()"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+      <div class="facebook social" onclick="openFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+    </div>
+  </span>
+  <span class="personnel-card" id = "right">
+    <div class="personnel-card-image">
+      <img src="/img/khushal.png" class="img-circle">
+    </div>
+    <div class="personnel-card-name">
+      <span>Khushal Kalidindi</span>
+    </div>
+    <div class="personnel-card-education-details">
+      <span>Web Designer and Editor</span>
+    </div>
+    <div class="personnel-card-history personnel-card-space">
+      <p>Khushal, a part-time Java and lua coding instructor at Green Apples Education, makes your websites look excellent through well <strong>animated</strong> logos and <strong>modern</strong> user interfaces.</p>
+      <div class="underline"></div>
+    </div>
+    <div class="personnel-card-links personnel-card-space">
+      <div class="mail social" onclick=""><i class="fa fa-google" aria-hidden="true"></i></div>
+      <div class="linkedIn social" onclick="openLinkedIn()"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+      <div class="github social" onclick="openGitHub()"><i class="fa fa-github-square" aria-hidden="true"></i></div>
+      <div class="twitter social" onclick="openTwitter()"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+      <div class="facebook social" onclick="openFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+    </div>
+  </span>
+    <span class="personnel-card" id = "center">
+    <div class="personnel-card-image">
+      <img src="/img/jason.png" class="img-circle">
+    </div>
+    <div class="personnel-card-name">
+      <span>Jason Zhang</span>
+    </div>
+    <div class="personnel-card-education-details">
+      <span>Founder & CEO</span>
+    </div>
+    <div class="personnel-card-history personnel-card-space">
+      <p>Our founder and CEO has ... </p>
+      <div class="underline"></div>
+    </div>
+    <div class="personnel-card-links personnel-card-space">
+      <div class="mail social" onclick=""><i class="fa fa-google" aria-hidden="true"></i></div>
+      <div class="linkedIn social" onclick="openLinkedIn()"><i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+      <div class="github social" onclick="openGitHub()"><i class="fa fa-github-square" aria-hidden="true"></i></div>
+      <div class="twitter social" onclick="openTwitter()"><i class="fa fa-twitter-square" aria-hidden="true"></i></div>
+      <div class="facebook social" onclick="openFacebook()"><i class="fa fa-facebook-square" aria-hidden="true"></i></div>
+    </div>
+  </span>
+</div>
+</section>
+
+
+
+
+<section id="contact">
+  <div class="text-container">
+    <div class="secondary">
+      <h1>Contact Us</h1>
+    </div>
+    <div class="contact-us">
+      <div class="greeting">
+        <p>We'd love to hear from you: </p>
+      </div>
+    </div> 
+    <!-- <div class="contact-form-container">
+      <form action="/contact" method="post" id="contact-form">
+        <div class="form-spacing">
+          <input type="text" name="name" placeholder="First & Last Name" class="contact-form-input" autocomplete="off">
+        </div>
+        <div class="form-spacing">
+          <input type="email" name="email" placeholder="Email" class="contact-form-input" autocomplete="off">
+        </div>
+        <div class="form-spacing">
+          <textarea name="body" placeholder="What would you like to know?" class="contact-form-textarea"></textarea>
+        </div>
+        <div class="form-button-spacing">
+          <button type="button" name="sendBtn" class="sendBtn">Send</button>
+        </div>
+      </form>
+    </div> -->
+  <!-- </div>
+</section> -->
+
+
+<% include partials/footer %>
